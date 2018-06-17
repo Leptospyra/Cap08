@@ -39,4 +39,32 @@ public class Stock {
         totalShares += shares;
         totalCost += shares * pricePerShare;
     }
+    // sets this Stock symbol to the given values
+    public void setSymbol(String symbol) {
+        this.symbol = symbol;
+    }
+
+    // sets this Stock totalCost to the given values
+    public void setTotalCost(double totalCost) {
+        this.totalCost = totalCost;
+    }
+
+    // sets this Stock totalshares to the given values
+    public void setTotalShares(int totalShares) {
+        this.totalShares = totalShares;
+    }
+    // gets this Stock symbol to the given values
+    public String getSymbol() {
+        return symbol;
+    }
+
+    // gets this Stock totalCost to the given values
+    public double getTotalCost() {
+        return totalCost;
+    }
+
+    // gets this Stock totalshares to the given values
+    public int getTotalShares() {
+        return totalShares;
+    }
 }
