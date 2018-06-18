@@ -49,8 +49,7 @@ public class TimeSpan {
         this.minutes -= totalMinutos % 60;
     }
     public void scale(int factor){
-        for(int i = 1; i<=factor;i++){
-            this.add(this.hours, this.minutes);
-        }
+        this.hours = this.minutes * factor / 60 + factor * this.hours;
+        this.minutes = this.minutes * factor % 60;
     }
 }

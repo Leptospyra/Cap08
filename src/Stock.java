@@ -67,4 +67,8 @@ public class Stock {
     public int getTotalShares() {
         return totalShares;
     }
+    public void clear(){
+        setTotalShares(0);
+        setTotalCost(0);
+    }
 }
